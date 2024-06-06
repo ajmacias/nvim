@@ -1,0 +1,73 @@
+{
+    "<? …": {
+        "prefix": "<?",
+        "body": [
+            "<?",
+            "",
+            "declare(strict_types=1);",
+            "",
+            ""
+        ],
+        "description": "Cabecera típica PHP"
+    },
+    "namespace …": {
+        "prefix": "ns",
+        "body": [
+            "namespace ${1:Foo\\Bar\\Baz};",
+            ""
+        ],
+        "description": "Namespace"
+    },
+    "class …": {
+        "prefix": "class",
+        "body": [
+            "class ${1:ClassName} ${2:extends ${3:AnotherClass}} ${4:implements ${5:Interface}} {",
+            "\t$0",
+            "}",
+            ""
+        ],
+        "description": "Class definition"
+    },
+    "PHPDoc param …": {
+        "prefix": "param",
+        "body": ["* @param ${1:Type} ${2:var} ${3:Description}$0"],
+        "description": "Paramater documentation"
+    },
+    "function …": {
+        "prefix": "fun",
+        "body": [
+            "${1:public }function ${2:FunctionName}(${3:${4:${5:Type} }\\$${6:var}${7: = ${8:null}}}) {",
+            "\t${0:# code...}",
+            "}"
+        ],
+        "description": "Function"
+    },
+    "$… = ( … ) ? … : …": {
+        "prefix": "if?",
+        "body": "\\$${1:retVal} = (${2:condition}) ? ${3:a} : ${4:b} ;",
+        "description": "Ternary conditional assignment"
+    },
+    "print_r …": {
+        "prefix": "dpr",
+        "body": [
+            "die('<pre>' . print_r($1, true) . '</pre>');",
+            ""
+        ],
+        "description": "Die with print_pre and <pre>"
+    },
+    "Setter …": {
+        "prefix": "gm",
+        "body": [
+            "/**",
+            " * Gets the value of ${1:foo}",
+            " *",
+            " * @return ${2:string}",
+            " */",
+            "${3:public} function get${4:$1}()",
+            "{",
+            "\treturn $this->${5:$1};",
+            "}"
+        ],
+        "description": "PHP Class Getter Setter"
+    }
+    }
