@@ -7,6 +7,7 @@ return {
             "hrsh7th/cmp-nvim-lsp",
             "hrsh7th/cmp-cmdline",
             "hrsh7th/cmp-git",
+
             "L3MON4D3/LuaSnip",
             "saadparwaiz1/cmp_luasnip",
             "windwp/nvim-autopairs",
@@ -36,15 +37,11 @@ return {
                     { name = "nvim_lsp" },
                     { name = "path" },
                     { name = "luasnip" },
-                    { name = "buffer",  keyword_length = 4 },
+                    { name = "buffer", keyword_length = 4 },
                 },
 
                 window = {
                     completion = cmp.config.window.bordered(),
-                    -- completion = {
-                    --     border = 'rounded',
-                    --     zindex = 20,
-                    -- },
                     documentation = cmp.config.window.bordered(),
                 },
 
