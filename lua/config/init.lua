@@ -1,6 +1,5 @@
-require "config.options"
-require "config.autocmds"
-require "config.keymaps"
-require "config.utils"
-require "config.diagnostic"
-require "config.lazy"
+require("config.settings")
+require("config.lazy")
+require("config.keymaps")
+require("config.autocmds")
+
