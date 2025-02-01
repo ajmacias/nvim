@@ -17,8 +17,9 @@ return {
 
     require('conform').setup {
       formatters_by_ft = {
-        php = { 'php-cs-fixer', 'php-cs-fixer-generic', stop_after_first = true },
         lua = { 'stylua' },
+        php = { 'php-cs-fixer', 'php-cs-fixer-generic', stop_after_first = true },
+        python = { 'black' },
       },
       formatters = {
         ['php-cs-fixer'] = {
