@@ -20,6 +20,7 @@ return {
         lua = { 'stylua' },
         php = { 'php-cs-fixer', 'php-cs-fixer-generic', stop_after_first = true },
         python = { 'black' },
+        json = { 'jq' },
       },
       formatters = {
         ['php-cs-fixer'] = {

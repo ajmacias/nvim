@@ -8,6 +8,7 @@ M.lspservers = {
 M.tools = {
   { name = 'stylua' },
   { name = 'black' },
+  { name = 'jq' },
 }
 
 M.toggle_completion = function()
