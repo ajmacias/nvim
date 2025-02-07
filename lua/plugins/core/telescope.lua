@@ -39,9 +39,9 @@ return {
       end
     end, { desc = 'Telescope: Open project files' })
 
-    vim.keymap.set('n', '<leader>pk', builtin.keymaps, { desc = 'Telescope: keymaps' })
-    vim.keymap.set('n', '<leader>pg', builtin.live_grep, { desc = 'Telescope: Live grep' })
-    vim.keymap.set('n', '<leader>pb', builtin.buffers, { desc = 'Telescope: Active buffers' })
-    vim.keymap.set('n', '<leader>ps', builtin.git_status, { desc = 'Telescope: Git status' })
+    vim.keymap.set('n', '<leader>kb', builtin.keymaps, { desc = 'Telescope: keymaps' })
+    vim.keymap.set('n', '<leader>ag', builtin.live_grep, { desc = 'Telescope: Live grep' })
+    vim.keymap.set('n', '<leader>pe', builtin.buffers, { desc = 'Telescope: Active buffers' })
+    vim.keymap.set('n', '<leader>gs', builtin.git_status, { desc = 'Telescope: Git status' })
   end,
 }
